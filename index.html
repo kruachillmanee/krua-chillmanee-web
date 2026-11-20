@@ -1,1 +1,158 @@
-Official web repository for Krua ChillManee (ครัวชิลล์มานี่) by CHILLMANEE GLOBAL CO., LTD. — Modern Esarn & Thai Gastronomy, Front Café, Pet-Friendly Hub, and Corporate B2B Catering.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krua ChillManee (ครัวชิลล์มานี่) | CHILLMANEE GLOBAL CO., LTD.</title>
+  <style>
+    :root {
+      --bg: #faf6f0;
+      --surface: #ffffff;
+      --ink: #1e2421;
+      --muted: #525d57;
+      --emerald: #0f5257;
+      --accent: #198754;
+      --gold: #c59b27;
+      --border: #e3ddd3;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      background: #0b110e;
+      color: #ffffff;
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 2px solid var(--gold);
+    }
+    .nav {
+      max-width: 1060px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .brand { font-weight: 700; font-size: 1.05rem; letter-spacing: 0.02em; }
+    .nav-links a {
+      color: #e6efe9;
+      text-decoration: none;
+      margin-left: 1.25rem;
+      font-size: 0.92rem;
+    }
+    .nav-links a:hover { color: #6ee7b7; }
+    .hero {
+      background: linear-gradient(135deg, #0b110e 0%, var(--emerald) 100%);
+      color: #ffffff;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    .hero-inner { max-width: 780px; margin: 0 auto; }
+    .hero h1 { font-size: 2.2rem; margin-bottom: 0.75rem; }
+    .hero p { color: #e2ece7; font-size: 1.05rem; margin-bottom: 1.5rem; }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #111815;
+      font-weight: 600;
+      padding: 0.7rem 1.4rem;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .container { max-width: 1060px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .card h3 { color: var(--emerald); margin-bottom: 0.5rem; }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+    footer {
+      background: #0b110e;
+      color: #cbd5d0;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">CHILLMANEE GLOBAL CO., LTD. • Krua ChillManee</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#offerings">Offerings</a>
+        <a href="#location">Location</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Krua ChillManee (ครัวชิลล์มานี่)</h1>
+      <p>
+        Creators &amp; Operators of “Krua ChillManee” (ครัวชิลล์มานี่) — A Hub of Happiness, Hospitality &amp; Lifestyle
+        by CHILLMANEE GLOBAL CO., LTD. (บริษัท ชิลล์มานี่ โกลบอล จำกัด).
+      </p>
+      <a class="btn" href="#location">Visit Khlong Luang, Pathum Thani</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about">
+      <h2>Modern Esarn, Thai Gastronomy &amp; Pet-Friendly Hub</h2>
+      <p class="muted">
+        A welcoming culinary and lifestyle destination in Pathum Thani bringing together regional flavors,
+        a front café, pet-friendly gathering spaces, and B2B catering services.
+      </p>
+    </section>
+
+    <section id="offerings" style="margin-top: 2.5rem;">
+      <h2>Core Experiences</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Modern Esarn &amp; Thai Dishes</h3>
+          <p class="muted">Signature regional recipes prepared with fresh ingredients for dine-in, takeaway, and delivery.</p>
+        </div>
+        <div class="card">
+          <h3>Front Café &amp; Beverages</h3>
+          <p class="muted">Coffee, specialty drinks, and afternoon pairings crafted for a relaxed social atmosphere.</p>
+        </div>
+        <div class="card">
+          <h3>Pet-Friendly &amp; B2B Catering</h3>
+          <p class="muted">Pet-welcoming spaces alongside corporate lunch boxes and event catering across Pathum Thani.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" style="margin-top: 2.5rem;">
+      <div class="card">
+        <h3>Head Office &amp; Venue</h3>
+        <p class="muted">
+          CHILLMANEE GLOBAL CO., LTD. (บริษัท ชิลล์มานี่ โกลบอล จำกัด)<br />
+          30/28 Moo 6 (Krua ChillManee), Khlong Luang, Khlong Si, Khlong Luang, Pathum Thani 12120, Thailand
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 CHILLMANEE GLOBAL CO., LTD. All rights reserved.
+  </footer>
+</body>
+</html>
