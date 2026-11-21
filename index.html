@@ -113,6 +113,12 @@
       gap: 1.25rem;
       margin-top: 1.25rem;
     }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -120,6 +126,29 @@
       padding: 1.5rem;
     }
     .card h3 { color: var(--emerald); margin-bottom: 0.5rem; }
+    .poster-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .poster-img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      display: block;
+      background: #f2eee6;
+    }
+    .poster-caption {
+      padding: 1rem;
+    }
+    .poster-caption h4 {
+      color: var(--emerald);
+      font-size: 0.98rem;
+      margin-bottom: 0.25rem;
+    }
     .muted { color: var(--muted); font-size: 0.95rem; }
     .contact-row {
       margin-top: 1.1rem;
@@ -147,6 +176,7 @@
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#offerings">Offerings</a>
+        <a href="#gallery">Chefs &amp; Boards</a>
         <a href="#location">Contact &amp; Location</a>
       </nav>
     </div>
@@ -191,6 +221,43 @@
         <div class="card">
           <h3>Pet-Friendly &amp; B2B Catering</h3>
           <p class="muted">Pet-welcoming spaces alongside corporate lunch boxes and event catering across Pathum Thani.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" style="margin-top: 2.5rem;">
+      <h2>Chefs &amp; Featured Menu Boards</h2>
+      <p class="muted">
+        Official culinary boards featuring our chef team and signature dishes at Krua ChillManee.
+      </p>
+      <div class="gallery-grid">
+        <div class="poster-card">
+          <img src="confirm%20chef%20Kai%20image%20billboard.jpg" alt="Chef Kai Esarn Menu Billboard" class="poster-img" />
+          <div class="poster-caption">
+            <h4>Chef Kai — Esarn Dishes</h4>
+            <p class="muted">Regional Esarn plates starting from 50 THB.</p>
+          </div>
+        </div>
+        <div class="poster-card">
+          <img src="Confirmed%20Chef%20Kai%20-%20with%20Branded%20Billboard.jpg" alt="Chef Kai Branded Billboard" class="poster-img" />
+          <div class="poster-caption">
+            <h4>Chef Kai (เชฟไก่)</h4>
+            <p class="muted">Thai, Isan &amp; Beverages showcase.</p>
+          </div>
+        </div>
+        <div class="poster-card">
+          <img src="confirmed%20to%20be%20image%20for%20Chef%20Nhong%20Billboard.jpg" alt="Chef Nhong Thai Dishes Billboard" class="poster-img" />
+          <div class="poster-caption">
+            <h4>Chef Nhong — Signature Plates</h4>
+            <p class="muted">A la carte Thai dishes &amp; daily favorites.</p>
+          </div>
+        </div>
+        <div class="poster-card">
+          <img src="Confirmed%20Billboard%20Street%20Code%20D011.jpg" alt="Chef Nhong Street Code D011 Billboard" class="poster-img" />
+          <div class="poster-caption">
+            <h4>K. Nhong — Good Food • Good Mood</h4>
+            <p class="muted">Thai cuisine, Isan flavors &amp; drinks.</p>
+          </div>
         </div>
       </div>
     </section>
