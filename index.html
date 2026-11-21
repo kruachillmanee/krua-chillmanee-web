@@ -12,6 +12,7 @@
       --muted: #525d57;
       --emerald: #0f5257;
       --gold: #c59b27;
+      --line-green: #06c755;
       --border: #e3ddd3;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -77,17 +78,33 @@
       box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
       border: 1px solid rgba(197, 155, 39, 0.35);
     }
-    .hero h1 { font-size: 2rem; margin-bottom: 0.6rem; }
-    .hero p { color: #e2ece7; font-size: 1.02rem; margin-bottom: 1.5rem; }
+    .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .hero p { color: #e2ece7; font-size: 1.02rem; margin-bottom: 1.6rem; }
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.85rem;
+    }
     .btn {
       display: inline-block;
       background: var(--gold);
       color: #111815;
       font-weight: 600;
-      padding: 0.7rem 1.5rem;
+      padding: 0.72rem 1.45rem;
       border-radius: 8px;
       text-decoration: none;
     }
+    .btn-line {
+      display: inline-block;
+      background: var(--line-green);
+      color: #ffffff;
+      font-weight: 600;
+      padding: 0.72rem 1.45rem;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .btn:hover, .btn-line:hover { opacity: 0.92; }
     .container { max-width: 1060px; margin: 0 auto; padding: 3rem 1.5rem; }
     section { scroll-margin-top: 80px; }
     .grid {
@@ -104,6 +121,13 @@
     }
     .card h3 { color: var(--emerald); margin-bottom: 0.5rem; }
     .muted { color: var(--muted); font-size: 0.95rem; }
+    .contact-row {
+      margin-top: 1.1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.85rem;
+    }
     footer {
       background: #050806;
       color: #cbd5d0;
@@ -123,20 +147,24 @@
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#offerings">Offerings</a>
-        <a href="#location">Location</a>
+        <a href="#location">Contact &amp; Location</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="hero-inner">
-      <img src="Official%20Logo%20for%20Com.jpg" alt="CHILLMANEE GLOBAL CO., LTD. — Creators & Operators of Krua ChillManee" class="hero-logo" />
+      <img src="Official%20Logo%20for%20Com.jpg" alt="CHILLMANEE GLOBAL CO., LTD. Official Logo" class="hero-logo" />
       <h1>Krua ChillManee (ครัวชิลล์มานี่)</h1>
       <p>
-        Creators &amp; Operators of “Krua ChillManee” (ครัวชิลล์มานี่) — A Hub of Happiness, Hospitality &amp; Lifestyle
-        by CHILLMANEE GLOBAL CO., LTD. (บริษัท ชิลล์มานี่ โกลบอล จำกัด).
+        Modern Esarn &amp; Thai Gastronomy • Front Café • Pet-Friendly Hub • Corporate B2B Catering<br />
+        Khlong Luang, Pathum Thani
       </p>
-      <a class="btn" href="#location">Visit Khlong Luang, Pathum Thani</a>
+      <div class="cta-group">
+        <!-- Replace #location below with Khun Pla's https://lin.ee/... link once confirmed -->
+        <a class="btn-line" href="#location">Chat on LINE OA</a>
+        <a class="btn" href="#location">Visit Khlong Luang, Pathum Thani</a>
+      </div>
     </div>
   </section>
 
@@ -169,11 +197,16 @@
 
     <section id="location" style="margin-top: 2.5rem;">
       <div class="card">
-        <h3>Head Office &amp; Venue</h3>
+        <h3>Head Office, Venue &amp; Contact</h3>
         <p class="muted">
           CHILLMANEE GLOBAL CO., LTD. (บริษัท ชิลล์มานี่ โกลบอล จำกัด)<br />
           30/28 Moo 6 (Krua ChillManee), Khlong Luang, Khlong Si, Khlong Luang, Pathum Thani 12120, Thailand
         </p>
+        <div class="contact-row">
+          <!-- Replace #location below with Khun Pla's https://lin.ee/... link and add the @ID text -->
+          <a class="btn-line" href="#location">Add Friend on LINE OA</a>
+          <span class="muted">Reservations, B2B Catering &amp; Inquiries</span>
+        </div>
       </div>
     </section>
   </main>
