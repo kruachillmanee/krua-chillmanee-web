@@ -15,6 +15,7 @@
       --border: #e3ddd3;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: var(--bg);
@@ -22,9 +23,9 @@
       line-height: 1.6;
     }
     header {
-      background: #0b110e;
+      background: #050806;
       color: #ffffff;
-      padding: 0.85rem 1.5rem;
+      padding: 0.7rem 1.5rem;
       position: sticky;
       top: 0;
       z-index: 10;
@@ -45,12 +46,12 @@
       gap: 0.75rem;
     }
     .nav-logo {
-      height: 40px;
+      height: 44px;
       width: auto;
       border-radius: 6px;
       object-fit: contain;
     }
-    .brand { font-weight: 700; font-size: 1rem; letter-spacing: 0.02em; }
+    .brand { font-weight: 700; font-size: 0.98rem; letter-spacing: 0.02em; }
     .nav-links a {
       color: #e6efe9;
       text-decoration: none;
@@ -59,33 +60,36 @@
     }
     .nav-links a:hover { color: #6ee7b7; }
     .hero {
-      background: linear-gradient(135deg, #0b110e 0%, var(--emerald) 100%);
+      background: radial-gradient(circle at top center, #113a35 0%, #050806 75%);
       color: #ffffff;
-      padding: 3rem 1.5rem;
+      padding: 2.75rem 1.5rem 3.25rem;
       text-align: center;
+      border-bottom: 3px solid var(--gold);
     }
     .hero-inner { max-width: 820px; margin: 0 auto; }
     .hero-logo {
-      max-width: 280px;
+      max-width: 340px;
       width: 100%;
       height: auto;
-      border-radius: 10px;
+      border-radius: 12px;
       margin: 0 auto 1.25rem auto;
       display: block;
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55);
+      border: 1px solid rgba(197, 155, 39, 0.35);
     }
-    .hero h1 { font-size: 2.1rem; margin-bottom: 0.75rem; }
-    .hero p { color: #e2ece7; font-size: 1.05rem; margin-bottom: 1.5rem; }
+    .hero h1 { font-size: 2rem; margin-bottom: 0.6rem; }
+    .hero p { color: #e2ece7; font-size: 1.02rem; margin-bottom: 1.5rem; }
     .btn {
       display: inline-block;
       background: var(--gold);
       color: #111815;
       font-weight: 600;
-      padding: 0.7rem 1.4rem;
+      padding: 0.7rem 1.5rem;
       border-radius: 8px;
       text-decoration: none;
     }
     .container { max-width: 1060px; margin: 0 auto; padding: 3rem 1.5rem; }
+    section { scroll-margin-top: 80px; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -101,7 +105,7 @@
     .card h3 { color: var(--emerald); margin-bottom: 0.5rem; }
     .muted { color: var(--muted); font-size: 0.95rem; }
     footer {
-      background: #0b110e;
+      background: #050806;
       color: #cbd5d0;
       text-align: center;
       padding: 2rem 1.5rem;
@@ -113,7 +117,7 @@
   <header>
     <div class="nav">
       <div class="brand-group">
-        <img src="Official%20Logo%20for%20Com.jpg" alt="Krua ChillManee Official Logo" class="nav-logo" />
+        <img src="Official%20Logo%20for%20Com.jpg" alt="CHILLMANEE GLOBAL CO., LTD. Official Logo" class="nav-logo" />
         <div class="brand">CHILLMANEE GLOBAL CO., LTD. • Krua ChillManee</div>
       </div>
       <nav class="nav-links">
@@ -126,7 +130,7 @@
 
   <section class="hero">
     <div class="hero-inner">
-      <img src="Official%20Logo%20for%20Com.jpg" alt="Krua ChillManee Official Logo" class="hero-logo" />
+      <img src="Official%20Logo%20for%20Com.jpg" alt="CHILLMANEE GLOBAL CO., LTD. — Creators & Operators of Krua ChillManee" class="hero-logo" />
       <h1>Krua ChillManee (ครัวชิลล์มานี่)</h1>
       <p>
         Creators &amp; Operators of “Krua ChillManee” (ครัวชิลล์มานี่) — A Hub of Happiness, Hospitality &amp; Lifestyle
